@@ -1,1 +1,32 @@
+💡 Day 2 of 90 Days of Reinforcement Learning
 
+Yesterday I introduced my journey. Today, let’s answer a simple but important question:
+
+👉 What is Reinforcement Learning (RL)?
+
+Reinforcement Learning is a branch of machine learning where an agent learns by interacting with an environment.
+
+The agent takes actions
+
+The environment responds with a new state and a reward
+
+Over time, the agent learns a strategy (policy) that maximizes long-term reward
+
+🔹 A Simple Analogy:
+Think of a dog learning a trick 🐕
+
+If it sits when asked → gets a treat 🍪 (positive reward)
+
+If it ignores → no treat (zero or negative reward)
+Over repeated trials, the dog learns the behavior that maximizes treats.
+
+🔹 Why it’s powerful:
+RL mimics how humans and animals learn from experience, which makes it a natural fit for real-world problems like:
+
+Robots learning to walk
+
+AI agents mastering games like Chess & Go
+
+Systems optimizing logistics or treatment schedules
+
+👉 Takeaway: RL is not about being told the “right answer.” It’s about discovering it through trial and error.
