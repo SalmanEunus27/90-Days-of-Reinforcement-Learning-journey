@@ -1,1 +1,30 @@
+💡 **Day 3 of 90 Days of Reinforcement Learning**
 
+Today’s topic: **How is Reinforcement Learning different from Supervised and Unsupervised Learning?**
+
+🔹 **Supervised Learning**
+
+* Learns from labeled data (input → correct output).
+* Example: Predicting house prices from historical data.
+
+🔹 **Unsupervised Learning**
+
+* Finds hidden patterns or groupings in data without labels.
+* Example: Customer segmentation in marketing.
+
+🔹 **Reinforcement Learning (RL)**
+
+* No labeled data. Instead, the agent learns by *interacting with the environment*.
+* It receives feedback in the form of rewards or penalties.
+* Example: A robot learning to walk or an AI playing chess.
+
+👉 **Key Difference:**
+
+* Supervised: *“Here’s the answer, learn the mapping.”*
+* Unsupervised: *“Here’s the data, find structure.”*
+* RL: *“Try things, get feedback, and improve.”*
+
+🔑 **Takeaway:**
+Reinforcement Learning is more about **experience-driven learning** compared to supervised and unsupervised learning. It’s closer to how humans and animals learn in the real world.
+
+#ReinforcementLearning #MachineLearning #AI #90DaysOfRL #LearningInPublic
