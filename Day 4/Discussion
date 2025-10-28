@@ -1,1 +1,26 @@
+Today’s focus: The Core Components of Reinforcement Learning
 
+Reinforcement Learning revolves around a simple but powerful setup:
+
+🔹 Agent → The learner/decision maker (e.g., robot, game bot).
+🔹 Environment → The world the agent interacts with (game, simulation, real world).
+🔹 State (s) → The current situation the agent is in.
+🔹 Action (a) → The choice the agent makes.
+🔹 Reward (r) → The feedback signal (positive or negative).
+
+👉 The cycle:
+
+Agent observes state (s)
+
+Agent takes an action (a)
+
+Environment gives new state (s′) + reward (r)
+
+Agent updates its strategy (policy) to improve future actions
+
+🔑 Takeaway:
+Reinforcement Learning is basically an interaction loop where an agent continuously learns how to make better decisions through feedback.
+
+This framework is universal – whether it’s an AI playing chess, a robot learning to walk, or a system optimizing ad placement.
+
+#ReinforcementLearning #MachineLearning #AI #90DaysOfRL #LearningInPublic
