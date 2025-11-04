@@ -1,0 +1,28 @@
+🚀 Day 5 of 90 Days of Reinforcement Learning
+
+Today’s topic: Types of Reinforcement Learning
+
+There are two main categories:
+
+🔹 Positive Reinforcement
+
+Adding a reward after a desired action.
+
+Example: Giving points to an agent for reaching the goal.
+
+Effect: Encourages repetition of good behavior.
+
+🔹 Negative Reinforcement
+
+Removing an unpleasant outcome when the right action is taken.
+
+Example: A robot avoids collision → penalty is removed.
+
+Effect: Strengthens the action that prevents negative results.
+
+⚖️ Both play important roles in how agents learn to adapt and optimize behavior in different environments.
+
+🔑 Takeaway:
+Reinforcement Learning doesn’t just mean “rewards” — it also includes learning by avoiding penalties.
+
+#ReinforcementLearning #AI #MachineLearning #90DaysOfRL #LearningInPublic
