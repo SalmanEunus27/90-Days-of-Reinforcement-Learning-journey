@@ -1,0 +1,22 @@
+📘 Day 6 of 90 Days of Reinforcement Learning
+
+🔎 Today’s topic: Exploration vs Exploitation Dilemma
+
+In RL, an agent faces a constant trade-off:
+
+⚡ Exploration → Trying new actions to discover better strategies.
+
+Example: A self-driving car tests a new route it has never taken.
+
+⚡ Exploitation → Using known actions that give the highest reward.
+
+Example: The same car always takes the fastest known route.
+
+💡 The key challenge:
+If an agent only exploits, it might miss better options.
+If it only explores, it wastes time without improving performance.
+
+🔑 Takeaway:
+Balancing exploration and exploitation is the heart of reinforcement learning — often handled by strategies like ε-greedy, softmax, or UCB.
+
+#ReinforcementLearning #AI #MachineLearning #90DaysOfRL #ExplorationVsExploitation
