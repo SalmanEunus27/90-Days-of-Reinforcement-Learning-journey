@@ -1,0 +1,25 @@
+Topic: The Markov Decision Process (MDP)
+
+The Markov Decision Process (MDP) is the mathematical foundation of Reinforcement Learning. It provides a formal way to model environments where decisions are made in a step-by-step manner.
+
+🔹 Key Components of MDP
+
+States (S): Possible situations the agent can be in.
+
+Actions (A): Choices available to the agent.
+
+Transition Function (P): Probability of moving from one state to another after taking an action.
+
+Reward Function (R): Feedback received for each action.
+
+Discount Factor (γ): Determines the importance of future rewards.
+
+💡 Markov Property:
+The future state depends only on the current state and action, not on past states.
+
+Think of it like “Memoryless decision-making” — just like predicting tomorrow’s weather based only on today’s conditions.
+
+🔑 Takeaway:
+Understanding MDPs is crucial because every RL problem can be modeled as an MDP. It’s the starting point for algorithms like Dynamic Programming, Q-Learning, and Policy Gradients.
+
+#ReinforcementLearning #MachineLearning #AI #90DaysOfRL #MarkovDecisionProcess
