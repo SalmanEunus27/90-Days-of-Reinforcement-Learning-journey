@@ -1,0 +1,31 @@
+💡 Day 8 of 90 Days of Reinforcement Learning
+
+Topic: Understanding Value Functions in RL
+
+In Reinforcement Learning, an agent needs a way to evaluate how good it is to be in a particular state or take a particular action.
+This is where Value Functions come in.
+
+🔹 Two main types of value functions:
+
+1️⃣ State Value Function (V(s))
+
+Measures how good it is to be in state s.
+
+Represents the expected total reward from that state onward.
+
+Example: A chess position that sets you up for victory.
+
+2️⃣ Action Value Function (Q(s, a))
+
+Measures how good it is to take action when in a state s.
+
+Example: Deciding whether to move a knight or a bishop in chess.
+
+💡 Why it matters:
+Value functions help agents decide “Which move is best?” by predicting future rewards.
+Almost every RL algorithm — like Q-Learning and Deep Q-Networks (DQN) — relies on these functions.
+
+🔑 Takeaway:
+If rewards are the “currency” of RL, value functions are the bank account that helps agents plan for the future.
+
+#ReinforcementLearning #MachineLearning #AI #90DaysOfRL #LearningInPublic
