@@ -1,0 +1,27 @@
+💡 Day 9 of 90 Days of Reinforcement Learning
+
+Topic: Policies in Reinforcement Learning
+
+A policy is like the brain of an RL agent — it defines how the agent chooses actions based on the current state.
+
+🔹 Types of Policies:
+1️⃣ Deterministic Policy
+
+Always chooses the same action for a given state.
+
+Example: If it's raining, always carry an umbrella. ☔
+
+2️⃣ Stochastic Policy
+
+Chooses actions probabilistically for a given state.
+
+Example: If it's cloudy, there's a 70% chance you take an umbrella and 30% chance you don’t. 🌥️
+
+💡 Key Insight:
+A well-optimized policy leads to optimal decision-making.
+Most RL algorithms, like Policy Gradient or Actor-Critic, focus on finding the best policy to maximize rewards.
+
+🔑 Takeaway:
+The policy is the agent’s strategy — it’s how the agent behaves and improves over time through learning.
+
+#ReinforcementLearning #MachineLearning #AI #90DaysOfRL #LearningInPublic
