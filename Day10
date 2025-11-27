@@ -1,0 +1,35 @@
+🚀 **Day 10 of 90 Days of Reinforcement Learning**
+
+**Topic:** *The Bellman Equation — The Backbone of RL*
+
+The **Bellman Equation** is one of the most fundamental concepts in RL.
+It provides a **recursive relationship** to calculate the value of a state or action by breaking it into **current reward + future expected rewards**.
+
+---
+
+🔹 **For State Value Function:**
+[
+V(s) = R(s) + \gamma \sum P(s'|s, a) V(s')
+]
+
+* **V(s):** Value of current state
+* **R(s):** Immediate reward at state *s*
+* **γ (gamma):** Discount factor for future rewards
+* **P(s'|s, a):** Probability of moving to next state *s'*
+
+---
+
+💡 **Why it matters:**
+
+* Helps an agent **plan ahead**, not just react.
+* Forms the foundation for **Dynamic Programming**, **Q-Learning**, and **Deep RL** algorithms.
+* Think of it like budgeting:
+
+  > *Immediate money (reward now) + expected future income (discounted future rewards).*
+
+---
+
+🔑 **Takeaway:**
+If Reinforcement Learning had a "law of motion," the **Bellman Equation** would be it!
+
+#ReinforcementLearning #MachineLearning #AI #90DaysOfRL #BellmanEquation
