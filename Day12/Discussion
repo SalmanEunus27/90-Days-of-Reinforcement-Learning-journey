@@ -1,0 +1,26 @@
+🎲 **Day 12: Monte Carlo Methods in Reinforcement Learning**
+
+Imagine you're learning to play chess.
+You play a full game, win or lose, **then** sit down to analyze what went right or wrong.
+That’s exactly how **Monte Carlo (MC) methods** work in RL!
+
+In Monte Carlo learning, the agent:
+1️⃣ **Plays through a complete episode** (start → finish).
+2️⃣ **Collects total rewards** it earned along the way.
+3️⃣ **Updates its strategy** by averaging these total returns for each visited state.
+
+---
+
+🔹 **Why it’s unique:**
+Unlike **Temporal Difference (TD)**, which updates values **step-by-step**,
+MC waits until the **end of the episode** before making changes.
+It’s simple and intuitive — but can feel slow when episodes are long. ⏳
+
+---
+
+💡 **Takeaway:**
+Monte Carlo is perfect when you want to learn **directly from experience** without needing to know how the environment works.
+
+Think of it as *learning from full stories*, while TD focuses on *learning from each chapter*. 📚
+
+#ReinforcementLearning #MachineLearning #MonteCarlo #AI #90DaysOfRL
