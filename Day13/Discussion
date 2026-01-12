@@ -1,0 +1,40 @@
+🚀 **Day 13: Q-Learning – The Classic RL Algorithm**
+
+Today, I explored **Q-Learning**, one of the most popular and foundational algorithms in reinforcement learning.
+
+Q-Learning is all about **learning the value of taking a specific action in a specific state** — also known as the **Q-value**.
+The goal? Learn an **optimal policy** that maximizes total future rewards.
+
+---
+
+### 🔹 **Q-Learning Update Rule:**
+
+[
+Q(s,a) = Q(s,a) + \alpha \big[r + \gamma \max_{a'} Q(s',a') - Q(s,a)\big]
+]
+
+Where:
+
+* **α (alpha):** Learning rate
+* **γ (gamma):** Discount factor
+* **r:** Immediate reward
+* **s':** Next state
+* **max Q:** Chooses the best possible future action
+
+---
+
+💡 **Why it’s powerful:**
+
+* **Model-free:** No need to know environment dynamics.
+* Works with both discrete and continuous problems.
+* Foundation for advanced techniques like **Deep Q-Networks (DQN)**.
+
+---
+
+🎯 **Real-world analogy:**
+Imagine playing a video game where you **trial-and-error every move**, remember the outcomes, and gradually figure out the *best moves* to win.
+That’s Q-Learning in action! 🕹️
+
+---
+
+#ReinforcementLearning #MachineLearning #AI #Qlearning #90DaysOfRL
