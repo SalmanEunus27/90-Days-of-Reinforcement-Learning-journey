@@ -1,0 +1,41 @@
+🌟 **Day 11 of 90 Days of Reinforcement Learning**
+
+**Topic:** *Temporal Difference (TD) Learning*
+
+So far, we’ve discussed **value functions** and the **Bellman Equation**.
+But how do agents **actually learn** these values from experience?
+That’s where **Temporal Difference Learning** comes in.
+
+---
+
+🔹 **What is TD Learning?**
+TD Learning is a method where an agent **updates its estimates of value functions based on partial information**, without waiting for the outcome.
+It combines ideas from:
+
+* **Monte Carlo methods:** Learning from complete episodes
+* **Dynamic Programming:** Bootstrapping from current estimates
+
+---
+
+💡 **TD Update Rule:**
+[
+V(s) = V(s) + \alpha [r + \gamma V(s') - V(s)]
+]
+
+* **α (alpha):** Learning rate
+* **r:** Reward received
+* **γ (gamma):** Discount factor
+* **s':** Next state
+
+---
+
+🔹 **Why it’s powerful:**
+
+* Learns *in real-time*, step-by-step.
+* Forms the foundation of famous algorithms like **SARSA** and **Q-Learning**.
+* Great for situations where the environment is **continuous** or **never-ending**.
+
+🔑 **Takeaway:**
+Temporal Difference Learning is the **bridge between theory and practice** — allowing agents to **learn directly from raw experience**.
+
+#ReinforcementLearning #MachineLearning #AI #90DaysOfRL #LearningInPublic #TemporalDifference
