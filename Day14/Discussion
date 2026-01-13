@@ -1,0 +1,42 @@
+🔥 **Day 14: SARSA – On-Policy Learning in RL**
+
+Today, I explored **SARSA**, another fundamental RL algorithm closely related to Q-Learning.
+
+While **Q-Learning** is **off-policy** (learning from the *best possible future action*),
+**SARSA** is **on-policy**, meaning it updates its values based on the **actual action** taken by the agent.
+
+---
+
+### 🔹 **SARSA Update Rule:**
+
+[
+Q(s,a) = Q(s,a) + \alpha \big[r + \gamma Q(s',a') - Q(s,a)\big]
+]
+
+Where:
+
+* **α (alpha):** Learning rate
+* **γ (gamma):** Discount factor
+* **r:** Reward received
+* **s', a':** Next state and action actually taken
+
+---
+
+💡 **Key Difference:**
+
+* **Q-Learning (Off-policy):** Learns using the *optimal next action*.
+* **SARSA (On-policy):** Learns using the *actual next action* chosen by the current policy.
+
+---
+
+🎮 **Analogy:**
+Imagine teaching someone to play a game:
+
+* **Q-Learning:** "Always assume you’ll play perfectly next turn."
+* **SARSA:** "Learn from the move you *actually made*, mistakes and all."
+
+---
+
+SARSA is ideal when **safety matters** because it learns from real behavior, not just theoretical optimal moves.
+
+#ReinforcementLearning #SARSA #MachineLearning #AI #90DaysOfRL
