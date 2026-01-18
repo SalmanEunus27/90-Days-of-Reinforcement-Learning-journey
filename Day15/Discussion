@@ -1,0 +1,62 @@
+**📘 Day 15: Deep Q-Networks (DQN) — Bridging Deep Learning and Reinforcement Learning**
+
+Today marks a major step in your RL journey — we combine neural networks with Q-Learning to create **Deep Q-Networks (DQN)**, a core idea behind modern AI agents like those used in **Atari games and autonomous systems**.
+
+---
+
+### 🧠 What is DQN?
+
+DQN replaces the traditional **Q-table** with a **neural network** that approximates the Q-value function:
+
+[
+Q(s,a; \theta) \approx Q^*(s,a)
+]
+
+where ( \theta ) are the network parameters.
+
+---
+
+### ⚙️ Key Concepts
+
+* **Experience Replay** 🌀
+  Stores past experiences ((s, a, r, s')) in a buffer.
+  Samples random mini-batches during training to **break correlation** and **stabilize learning**.
+
+* **Target Network** 🎯
+  A copy of the Q-network used to compute target values.
+  Updated slowly to reduce oscillations and divergence.
+
+---
+
+### 🧩 DQN Algorithm Steps
+
+1. Initialize Q-network and target network.
+2. For each episode:
+
+   * Choose an action using ε-greedy policy.
+   * Perform action → observe reward & next state.
+   * Store transition in replay memory.
+   * Sample random batch from memory.
+   * Compute target:
+     [
+     y = r + \gamma \max_{a'} Q_{\text{target}}(s', a')
+     ]
+   * Update Q-network weights via gradient descent.
+3. Periodically update the target network.
+
+---
+
+### 📊 Advantages
+
+✅ Handles high-dimensional inputs (like images).
+✅ Learns directly from pixels or raw sensor data.
+✅ Scalable to complex environments.
+
+---
+
+### 🚀 Applications
+
+* **Atari game-playing agents**
+* **Autonomous navigation**
+* **Robotics control tasks**
+* **Resource optimization**
