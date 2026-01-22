@@ -1,0 +1,30 @@
+**Day 16 — Double DQN (DDQN): Tackling Overestimation in Q-Learning**
+
+Today, let’s explore how **Double Deep Q-Networks (DDQN)** solve one of the biggest issues in DQN — **overestimation bias**.
+
+🔹 **Problem with DQN:**
+In standard DQN, the same network is used to both **select** and **evaluate** actions, which can lead to overly optimistic value estimates.
+
+🔹 **DDQN Solution:**
+DDQN decouples these two steps:
+
+1. **Action Selection:** Choose the best action using the main Q-network.
+2. **Action Evaluation:** Use the target network to estimate the Q-value of that action.
+
+This reduces overestimation and stabilizes training, especially in complex environments.
+
+🧠 **Equation:**
+[
+y = r + \gamma Q_{\text{target}}(s', \arg\max_a Q_{\text{main}}(s', a))
+]
+
+🎯 **Key Benefits:**
+
+* Reduces bias in Q-value estimates
+* Improves stability and performance
+* Used in advanced RL algorithms like **Rainbow DQN**
+
+💬 *DDQN shows how small architectural tweaks can bring big improvements to learning performance.*
+
+
+#Day16 #ReinforcementLearning #DoubleDQN #DeepLearning #MachineLearning #AIResearch #90DaysOfRL
