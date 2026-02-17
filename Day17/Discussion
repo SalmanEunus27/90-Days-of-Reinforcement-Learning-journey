@@ -1,0 +1,44 @@
+🎮 **Day 17: Dueling DQN — Separating Value and Advantage**
+
+Today, I explored an elegant improvement to the DQN family — the **Dueling Deep Q-Network (Dueling DQN)**.
+
+The main idea?
+👉 Not all states require action-specific decisions. Some states are just “good” or “bad,” regardless of which action is taken.
+
+To capture this, Dueling DQN splits the Q-value estimation into two parts:
+
+[
+Q(s,a) = V(s) + A(s,a)
+]
+
+Where:
+
+* **V(s):** State Value — how good it is to be in state *s*
+* **A(s,a):** Advantage — how much better an action *a* is compared to others in that state
+
+---
+
+💡 **Why it matters:**
+
+* Helps the agent learn **which states are valuable**, even when actions don’t affect outcomes much.
+* Speeds up learning in environments with **many similar actions**.
+* Reduces variance in Q-value estimation.
+
+---
+
+🧠 **Architecture Highlights:**
+
+* Shared convolutional layers (for feature extraction)
+* Two separate streams:
+
+  * One for **Value**
+  * One for **Advantage**
+* Combined later to compute the final Q-values
+
+---
+
+🎯 **In short:**
+Dueling DQN = DQN + Smarter Value Decomposition
+It’s like giving your agent two brains — one to understand *how good the situation is*, and another to decide *what to do next*. 🧩
+
+#ReinforcementLearning #DeepLearning #AI #DuelingDQN #90DaysOfRL #MachineLearning
