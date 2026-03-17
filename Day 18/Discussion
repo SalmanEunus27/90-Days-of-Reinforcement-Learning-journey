@@ -1,0 +1,49 @@
+**Day 18 — Prioritized Experience Replay (PER): Learning from What Matters Most**
+
+Today, I explored **Prioritized Experience Replay (PER)** — an improvement that makes agents learn **smarter, not harder** 💡
+
+In standard DQN, experiences are sampled randomly from a replay buffer.
+But not all experiences are equally useful — some contain *more learning signal* than others.
+
+That’s where **PER** comes in.
+
+---
+
+### 🔹 **Key Idea:**
+
+Instead of uniform sampling, PER **prioritizes transitions** based on their **TD error** (the difference between predicted and actual value).
+
+[
+P(i) = \frac{|\delta_i|^\alpha}{\sum_k |\delta_k|^\alpha}
+]
+
+Where:
+
+* ( \delta_i ) = TD error of transition *i*
+* ( \alpha ) = controls prioritization strength
+
+---
+
+### 🧠 **Why It Works:**
+
+* Experiences with **higher TD error** are sampled more often.
+* The agent learns faster by focusing on the most *surprising* or *informative* events.
+* To prevent bias, **importance-sampling weights** are used during updates.
+
+---
+
+### ⚙️ **Two Main Types:**
+
+1️⃣ **Proportional Prioritization** → Directly uses |TD error|
+2️⃣ **Rank-Based Prioritization** → Sorts experiences by error rank
+
+---
+
+🎯 **Result:**
+Faster convergence, more stable learning, and efficient memory usage — especially in environments with sparse rewards.
+
+---
+
+💬 *Think of it like studying for an exam: you spend more time on the topics you find hardest, not the ones you’ve already mastered.* 📚
+
+#ReinforcementLearning #DeepLearning #ExperienceReplay #DQN #AI #90DaysOfRL
