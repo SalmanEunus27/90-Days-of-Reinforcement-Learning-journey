@@ -1,0 +1,26 @@
+
+🎯 **Day 19 of My 90 Days of Reinforcement Learning Journey**
+
+Today, I explored **Dueling Deep Q-Networks (Dueling DQNs)** — an elegant improvement over traditional DQN architectures.
+
+🧠 **Key Concept:**
+Instead of estimating the Q-value directly, Dueling DQN separates it into two streams:
+
+* **Value function (V(s))** – how good it is to be in a given state.
+* **Advantage function (A(s, a))** – how good a specific action is compared to others in that state.
+
+These two are then combined to compute the Q-values:
+[
+Q(s, a) = V(s) + A(s, a) - \frac{1}{|A|}\sum_{a'}A(s, a')
+]
+
+💡 **Why It Matters:**
+
+* Learns better state representation
+* Reduces overestimation
+* Improves performance on environments with many similar-valued actions
+
+🚀 Dive into my implementation and progress here:
+🔗 [GitHub Repository](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #DeepLearning #MachineLearning #AI #DQN #Research #Python #DataScience #90DayChallenge
