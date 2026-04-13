@@ -1,0 +1,39 @@
+🤖 **Day 20 of My 90 Days of Reinforcement Learning Journey**
+
+Today, I delved into **Policy Gradient Methods** — a foundational concept that shifts the way reinforcement learning agents are trained.
+
+Unlike value-based methods (like DQN), which learn *value functions* and derive a policy indirectly, **Policy Gradient methods learn the policy directly.**
+
+---
+
+### 🧠 **Core Idea:**
+
+We parameterize the policy as ( \pi_\theta(a|s) ) — the probability of taking action *a* in state *s*, given parameters *θ*.
+The objective is to **maximize expected cumulative reward**:
+
+[
+J(\theta) = E_{\pi_\theta} [R]
+]
+
+We then update the parameters in the direction of the gradient:
+
+[
+\theta \leftarrow \theta + \alpha \nabla_\theta J(\theta)
+]
+
+This approach allows smooth updates and works well in **continuous action spaces**.
+
+---
+
+### 💡 **Why It’s Important:**
+
+* Works directly with stochastic policies
+* Enables **continuous control** (unlike discrete-only DQNs)
+* Forms the foundation of advanced RL algorithms like **REINFORCE**, **Actor-Critic**, and **PPO**
+
+---
+
+📘 You can explore my compilation of learnings throughout this 90-day journey here:
+🔗 [GitHub Repository](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #DeepLearning #PolicyGradients #MachineLearning #AI #Research #NeuralNetworks #90DaysOfRL
