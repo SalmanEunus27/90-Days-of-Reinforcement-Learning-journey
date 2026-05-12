@@ -1,0 +1,48 @@
+🚀 **Day 21 of My 90 Days of Reinforcement Learning Journey**
+
+Today’s chapter in the RL adventure was all about **REINFORCE**, one of the simplest but most influential policy gradient algorithms. It’s like the “original flavor” of learning policies directly from experience, powered by pure episodic returns.
+
+---
+
+### 🧠 **What REINFORCE Does**
+
+At its heart, REINFORCE:
+✅ Runs an episode
+✅ Observes the total return
+✅ Adjusts the policy in the direction that makes good actions more likely next time
+
+The update rule feels almost poetic in its simplicity:
+[
+\theta \leftarrow \theta + \alpha , G_t , \nabla_\theta \log \pi_\theta(a_t|s_t)
+]
+
+The higher the return (G_t), the stronger the nudge toward the chosen action.
+
+---
+
+### ⚙️ **Why It’s Useful**
+
+* Completely **model-free**
+* Works directly on **stochastic policies**
+* Forms the conceptual backbone for more advanced methods like **Actor-Critic** and **PPO**
+* Great for environments where episodes are well-defined
+
+---
+
+### 🎯 **But There’s a Catch**
+
+REINFORCE can be… enthusiastic.
+Its updates have **high variance**, because it waits until the end of the episode to learn. That’s why later algorithms try to smooth, stabilize, or speed it up.
+
+Still, as a learning milestone, REINFORCE is a classic step — like climbing the first lookout tower in a long trail and seeing the whole landscape.
+
+---
+
+📘 I’m documenting all my learnings from this journey here:
+🔗 [https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #MachineLearning #DeepLearning #PolicyGradients #REINFORCE #AIResearch #90DaysOfRL
+
+---
+
+If you want, I can also create an infographic for REINFORCE similar to the previous ones.
