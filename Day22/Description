@@ -1,0 +1,54 @@
+## 🤖 **Day 22 of My 90 Days of Reinforcement Learning Journey**
+
+### **Topic: Actor–Critic Methods**
+
+Today I explored **Actor–Critic algorithms**, one of the most powerful families in reinforcement learning — blending the strengths of both policy-based and value-based approaches.
+
+### 🎭 **What Are Actor–Critic Methods?**
+
+They consist of two networks working together:
+
+### **1️⃣ The Actor**
+
+* Learns a **policy**:
+  (\pi_\theta(a|s))
+* Decides *which action to take* in each state.
+* Updated using policy gradient.
+
+### **2️⃣ The Critic**
+
+* Learns a **value function**:
+  (V_\phi(s))
+* Evaluates how good the current state (or action) is.
+* Provides feedback to improve the Actor’s updates.
+
+---
+
+### 🔥 **Why Actor–Critic Is Powerful**
+
+✔ Combines stability of value-based methods + flexibility of policy-based methods
+✔ Works in **continuous action spaces**
+✔ Reduces variance in updates (thanks to the Critic)
+✔ Forms the base for advanced algorithms like **A2C, A3C, PPO, SAC, and DDPG**
+
+---
+
+### 🧠 **Key Update Ideas**
+
+**Actor Update:**
+[
+\theta \leftarrow \theta + \alpha \delta_t \nabla_\theta \log \pi_\theta(a_t | s_t)
+]
+
+**Critic Update:**
+[
+\phi \leftarrow \phi + \beta (R_t + \gamma V_\phi(s') - V_\phi(s)) \nabla_\phi V_\phi(s)
+]
+
+Where ( \delta_t ) is the TD error guiding the Actor.
+
+
+📘 **All my learnings are being compiled here:**
+🔗 GitHub: [https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #ActorCritic #A2C #DeepLearning #MachineLearning #AI #ResearchJourney #90DaysOfRL
