@@ -1,0 +1,45 @@
+## 🤖 **Day 23 of My 90 Days of Reinforcement Learning Journey**
+
+### **Understanding Advantage Actor–Critic (A2C)**
+
+Today, I explored **Advantage Actor–Critic (A2C)** — an important improvement over the basic Actor–Critic method.
+
+A2C introduces the **advantage function**, which helps the agent understand *how much better an action is compared to the average*.
+This reduces variance and stabilizes learning.
+
+---
+
+### 🧠 **Key Concepts**
+
+🔹 **Advantage Function**
+[
+A(s, a) = Q(s, a) - V(s)
+]
+This tells the agent:
+*“Was this action better or worse than what I usually do in this state?”*
+
+🔹 **Actor Update**
+[
+\theta \leftarrow \theta + \alpha A_t \nabla_\theta \log \pi_\theta(a_t|s_t)
+]
+
+🔹 **Critic Update**
+[
+\phi \leftarrow \phi + \beta (R_t + \gamma V_\phi(s_{t+1}) - V_\phi(s_t))
+]
+
+---
+
+### 💡 **Why A2C Matters**
+
+* More stable than REINFORCE
+* Lower variance than vanilla Actor–Critic
+* Helps agents take more informed steps toward optimal policies
+* Used as a foundation for more powerful algorithms like **A3C** and **PPO**
+
+---
+
+📘 You can explore my ongoing compilation of learnings here:
+🔗 **GitHub:** [https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #A2C #DeepLearning #AI #MachineLearning #NeuralNetworks #90DaysOfRL
