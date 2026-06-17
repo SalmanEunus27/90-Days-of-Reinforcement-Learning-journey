@@ -1,0 +1,39 @@
+### 📅 Day 24 of 90 Days of Reinforcement Learning
+
+**Topic: Value Function Approximation with Neural Networks**
+
+In early reinforcement learning, value functions were stored in **tables**.
+But as soon as the state space becomes **large or continuous**, tabular methods break down.
+
+That’s where **function approximation** comes in.
+
+### 🔍 What I learned today:
+
+* Instead of storing values in tables, we **approximate** them using models
+* Commonly used approximators:
+
+  * **Linear models** → fast, simple, feature-based
+  * **Neural networks** → powerful, scalable, generalizable
+* Value functions can be approximated as:
+
+  * ( V(s; \theta) ) for state values
+  * ( Q(s, a; \theta) ) for action values
+
+### 🧠 Why neural networks matter in RL:
+
+* Handle **high-dimensional state spaces**
+* Enable **generalization** across similar states
+* Foundation of **Deep Reinforcement Learning**
+
+  * Used in DQN, Actor-Critic, A2C, A3C, PPO, and more
+
+### 🚀 Big picture:
+
+Without value function approximation, **Deep RL wouldn’t exist**.
+This concept is the bridge between **classical RL** and **modern deep RL algorithms**.
+
+📌 A compilation of my daily RL learnings is available here:
+🔗 [https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #DeepLearning #MachineLearning #AI #90DaysOfRL #LearningInPublic #RLJourney
+ 
