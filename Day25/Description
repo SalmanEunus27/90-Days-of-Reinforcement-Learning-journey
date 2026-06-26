@@ -1,0 +1,54 @@
+### 📘 Day 25 of 90 Days of Reinforcement Learning
+
+**🎯 Topic: Policy Optimization & Stability Problems in RL**
+
+After learning how value functions are approximated with neural networks, today I focused on a key question:
+
+**Why do policy-based methods need special care during optimization?**
+
+---
+
+### 🔍 What I learned today:
+
+• Directly optimizing policies can be **unstable**
+• Large policy updates can **collapse performance**
+• High variance gradients slow down learning
+• Exploration–exploitation balance becomes tricky
+
+---
+
+### ⚠️ Common Problems in Policy Optimization:
+
+• **High variance** in gradient estimates
+• **Destructive updates** (policy changes too much in one step)
+• **Poor sample efficiency**
+• **Training instability** in deep RL
+
+---
+
+### 💡 Why this matters:
+
+These challenges are the **main reason modern RL algorithms exist**.
+
+Algorithms like:
+
+* PPO
+* TRPO
+* SAC
+
+are all designed to **control policy updates and improve stability**.
+
+👉 Understanding *why* vanilla policy gradients struggle makes it much easier to understand *why* PPO works.
+
+---
+
+### 🧠 Big Picture:
+
+> Stable policy optimization is the bridge between theory-level RL and real-world, scalable Deep RL systems.
+
+---
+
+📂 A compilation of my daily RL learnings is available here:
+🔗 [https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #DeepRL #MachineLearning #AI #90DaysOfLearning #PolicyGradient #PPO
