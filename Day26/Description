@@ -1,0 +1,42 @@
+## **Day 26 of 90 Days of Reinforcement Learning**
+
+### **Topic: Proximal Policy Optimization (PPO) — Why It Became the Go-To Policy Gradient Method**
+
+After exploring policy gradients, Actor–Critic, A2C, and A3C, today I focused on **Proximal Policy Optimization (PPO)** — one of the most widely used and practical reinforcement learning algorithms.
+
+PPO was designed to solve a key problem in policy gradient methods:
+**large policy updates that destabilize training.**
+
+---
+
+### **Core Idea**
+
+PPO limits how much the policy is allowed to change at each update step, ensuring **stable and reliable learning** without the complexity of second-order optimization.
+
+Instead of enforcing a hard constraint (like TRPO), PPO uses a **clipped objective function**.
+
+---
+
+### **Key Concepts**
+
+* Uses an **actor–critic architecture**
+* Optimizes a **clipped surrogate objective**
+* Prevents destructive policy updates
+* Balances **exploration and exploitation**
+* Works well with both **discrete and continuous actions**
+
+---
+
+### **Why PPO Matters**
+
+* Simple to implement
+* Highly stable compared to vanilla policy gradients
+* Scales well to complex environments
+* Widely used in robotics, games, and modern RL benchmarks
+
+This balance between **performance, stability, and simplicity** is why PPO is often considered the *default* choice in deep reinforcement learning.
+
+---
+
+📌 *Compilation of my daily RL learnings is available on GitHub:*
+[https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
