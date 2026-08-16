@@ -1,0 +1,71 @@
+## **Day 27 of 90 Days of Reinforcement Learning**
+
+### **Topic: Trust Region Policy Optimization (TRPO) — Learning with Guarantees**
+
+After studying **PPO**, today I explored its theoretical predecessor:
+**Trust Region Policy Optimization (TRPO)**.
+
+TRPO was one of the first algorithms to **explicitly guarantee stable policy improvement**, addressing a major weakness of vanilla policy gradients.
+
+---
+
+### **Core Idea**
+
+TRPO ensures that the new policy **does not move too far** from the old policy by enforcing a **trust region constraint**.
+
+Instead of directly maximizing reward, TRPO solves:
+
+> *“Improve the policy as much as possible, but only within a safe region.”*
+
+---
+
+### **Key Concept: KL-Divergence Constraint**
+
+TRPO restricts policy updates using a constraint on **KL divergence**:
+
+[
+\max_\theta ; \mathbb{E} \left[ \frac{\pi_\theta(a|s)}{\pi_{\theta_{old}}(a|s)} A(s,a) \right]
+]
+
+subject to:
+
+[
+\mathbb{E} \left[ KL(\pi_{\theta_{old}} ;||; \pi_\theta) \right] \le \delta
+]
+
+This ensures:
+
+* Monotonic policy improvement
+* No sudden performance collapse
+
+---
+
+### **Why TRPO Matters**
+
+* Strong **theoretical guarantees**
+* Very stable learning
+* Influential in shaping modern policy optimization
+* Foundation for PPO
+
+---
+
+### **TRPO vs PPO (Intuition)**
+
+* **TRPO:** Precise, mathematically rigorous, computationally heavy
+* **PPO:** Approximate, simpler, faster, easier to implement
+
+PPO keeps the *spirit* of TRPO but removes its complexity.
+
+---
+
+### **Big Picture**
+
+TRPO showed that **stability is not optional** in policy optimization.
+Even though PPO replaced it in practice, TRPO remains a **cornerstone in RL research**.
+
+---
+
+📌 *Compilation of my daily RL learnings:*
+[https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #TRPO #PolicyOptimization #DeepRL #AI #MachineLearning #90DaysOfRL
