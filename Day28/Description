@@ -1,0 +1,77 @@
+## **Day 28 of 90 Days of Reinforcement Learning**
+
+### **Topic: Soft Actor-Critic (SAC) — Maximum Entropy Reinforcement Learning**
+
+Today, I studied **Soft Actor-Critic (SAC)**, one of the most powerful and widely used algorithms for **continuous control** in modern reinforcement learning.
+
+Unlike PPO and TRPO, which focus mainly on stability, SAC introduces a new principle:
+
+> **Learn policies that are both optimal and maximally random.**
+
+---
+
+### 🔑 Core Idea: Maximum Entropy RL
+
+SAC doesn’t just maximize expected reward.
+It maximizes **reward + entropy**:
+
+$$
+J(\pi) = \sum_t \mathbb{E}\big[ r(s_t,a_t) + \alpha \mathcal{H}(\pi(\cdot|s_t)) \big]
+$$
+
+This encourages:
+
+* High reward
+* High exploration
+* Robust policies
+
+---
+
+### 🧠 Key Components of SAC
+
+• **Stochastic policy** (Gaussian actor)
+• **Twin Q-networks** (to reduce overestimation bias)
+• **Soft value function**
+• **Automatic entropy tuning**
+• **Off-policy learning** (high sample efficiency)
+
+---
+
+### 🚀 Why SAC Matters
+
+* Excellent performance in **continuous action spaces**
+* More stable than DDPG
+* Better exploration than PPO/TRPO
+* Strong real-world performance in robotics & control
+* State-of-the-art results in many benchmarks
+
+---
+
+### ⚖️ SAC vs PPO (Intuition)
+
+| PPO                      | SAC                            |
+| ------------------------ | ------------------------------ |
+| On-policy                | Off-policy                     |
+| Stable & simple          | Sample-efficient & exploratory |
+| Limited exploration      | Entropy-driven exploration     |
+| Works well in many tasks | Excels in continuous control   |
+
+---
+
+### 🧠 Big Picture
+
+SAC shows that **optimal behavior is not always deterministic**.
+Sometimes, the best policy is one that **keeps its options open**.
+
+This idea has influenced:
+
+* Robotics
+* Autonomous control
+* Modern RLHF-style methods
+
+---
+
+📌 *Compilation of my daily RL learnings:*
+🔗 [https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #SAC #DeepRL #MachineLearning #AI #ContinuousControl #90DaysOfRL #DL #DRL
