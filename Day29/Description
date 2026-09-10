@@ -1,0 +1,87 @@
+## **Day 29 of 90 Days of Reinforcement Learning**
+
+### **Topic: Model-Based Reinforcement Learning — Learning the World Before Acting**
+
+So far, most of the algorithms I’ve studied (DQN, PPO, SAC) are **model-free** — they learn *what to do* without explicitly understanding *how the environment works*.
+
+Today’s focus was **Model-Based Reinforcement Learning (MBRL)**, where the agent **learns a model of the environment** and uses it to plan ahead.
+
+---
+
+### 🔍 Core Idea
+
+Instead of directly learning a policy or value function, the agent learns:
+
+$$
+\hat{P}(s'|s,a), \quad \hat{R}(s,a)
+$$
+
+That is:
+
+* How the environment transitions
+* What reward to expect
+
+Then it **plans** using this learned model.
+
+---
+
+### 🧠 Model-Based RL Pipeline
+
+1️⃣ Collect experience
+2️⃣ Learn environment dynamics
+3️⃣ Simulate future trajectories
+4️⃣ Choose actions via planning or optimization
+5️⃣ Execute → collect new data → repeat
+
+This is closer to how **humans reason**:
+*“If I do X, what will happen next?”*
+
+---
+
+### 🚀 Why Model-Based RL Matters
+
+* **High sample efficiency** (fewer real-world interactions)
+* Crucial for **robotics and real systems**
+* Enables planning, imagination, and foresight
+* Bridges **control theory** and **learning**
+
+---
+
+### ⚖️ Model-Based vs Model-Free (Intuition)
+
+| Model-Free               | Model-Based           |
+| ------------------------ | --------------------- |
+| Learn by trial-and-error | Learn dynamics + plan |
+| Data-hungry              | Sample-efficient      |
+| Simple to implement      | Harder but powerful   |
+| Reactive                 | Predictive            |
+
+---
+
+### 🧠 Examples of Model-Based RL
+
+* Dyna-Q
+* MPC + learned dynamics
+* World Models
+* MuZero (learns a latent model)
+
+---
+
+### 🔑 Big Picture
+
+Model-Based RL is where **intelligence meets reasoning**.
+Instead of blindly reacting, the agent **imagines futures before acting**.
+
+This idea is increasingly important for:
+
+* Autonomous systems
+* Robotics
+* Sim-to-real transfer
+* Safe RL
+
+---
+
+📌 *Compilation of my daily RL learnings:*
+🔗 [https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey](https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey)
+
+#ReinforcementLearning #ModelBasedRL #DeepRL #AI #MachineLearning #Planning #90DaysOfRL
