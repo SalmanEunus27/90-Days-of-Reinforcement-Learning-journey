@@ -1,0 +1,67 @@
+## 🎉 **Day 30 of 90 Days of Reinforcement Learning**
+
+### **30 Days In — What I’ve Learned So Far**
+
+Today marks the completion of the **first 30 days** of my Reinforcement Learning journey.  
+Instead of introducing a new algorithm, I’m pausing to **reflect, consolidate, and zoom out**.
+
+---
+
+## 🧠 **What These 30 Days Covered**
+
+### 🔹 Foundations
+- Agent, Environment, State, Action, Reward  
+- MDPs, Policies, Value Functions  
+- Exploration vs Exploitation  
+
+### 🔹 Classical RL
+- Monte Carlo methods  
+- Temporal Difference learning  
+- SARSA vs Q-learning  
+
+### 🔹 Deep RL
+- Function approximation with neural networks  
+- DQN and its improvements  
+  - Double DQN  
+  - Dueling DQN  
+  - Prioritized Experience Replay  
+  - Rainbow DQN  
+
+### 🔹 Policy-Based & Actor–Critic Methods
+- Policy Gradients & REINFORCE  
+- Actor–Critic, A2C, A3C  
+- PPO, TRPO  
+- Soft Actor-Critic (SAC)  
+
+### 🔹 Advanced Concepts
+- Stability in policy optimization  
+- Entropy & exploration  
+- Model-Based Reinforcement Learning  
+
+---
+
+## 📌 **Key Lessons (More Important Than Algorithms)**
+
+1️⃣ **Stability matters more than raw performance**  
+2️⃣ **Exploration is not a side detail — it’s central to intelligence**  
+3️⃣ **Small architectural ideas often outperform “big” new algorithms**  
+4️⃣ **Deep RL is fragile without the right constraints**  
+5️⃣ **Understanding *why* algorithms exist is more valuable than memorizing them**
+
+---
+
+## 🔭 **What’s Coming Next (Days 31–60)**
+
+The next phase will go deeper into:
+- Multi-Agent Reinforcement Learning  
+- Hierarchical RL  
+- Safe RL & constraints  
+- Sim-to-Real challenges  
+- RL for robotics and real-world systems  
+
+This is where theory starts meeting **real deployment challenges**.
+
+---
+
+## 📂 **All my daily RL learnings are compiled here:**  
+🔗 https://github.com/SalmanEunus27/90-Days-of-Reinforcement-Learning-journey  
